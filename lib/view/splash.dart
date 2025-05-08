@@ -20,7 +20,7 @@ class _SplashState extends State<Splash> {
     super.initState();
   }
 
-   @override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Constant.darkWhite,

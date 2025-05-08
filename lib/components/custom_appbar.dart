@@ -10,9 +10,8 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
 
   final String appbarTitle;
 
-  const CustomAppbar({Key? key, this.appbarTitle = "iDrip"})
-      : preferredSize = const Size.fromHeight(56.0),
-        super(key: key);
+  const CustomAppbar({super.key, this.appbarTitle = "iDrip"})
+    : preferredSize = const Size.fromHeight(56.0);
 
   @override
   Widget build(BuildContext context) {
@@ -26,16 +25,12 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
       ),
       leading: Padding(
         padding: 12.allP,
-        child: SvgPicture.asset(
-          Assets.icons.ic_drawer_svg,
-        ),
+        child: SvgPicture.asset(Assets.icons.ic_drawer_svg),
       ),
       actions: [
         Padding(
           padding: 12.allP,
-          child: SvgPicture.asset(
-            Assets.icons.ic_search_svg,
-          ),
+          child: SvgPicture.asset(Assets.icons.ic_search_svg),
         ),
       ],
       backgroundColor: Constant.darkWhite,
