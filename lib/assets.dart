@@ -27,6 +27,12 @@ final class _Icons {
 final class _Images {
   _Images._();
 
+  final String im_c1_png = 'assets/images/im_c1.png';
+  final String im_c2_png = 'assets/images/im_c2.png';
   final String im_campaigns_png = 'assets/images/im_campaigns.png';
+  final String im_p1_png = 'assets/images/im_p1.png';
+  final String im_p2_png = 'assets/images/im_p2.png';
   final String im_splash_png = 'assets/images/im_splash.png';
+  final String im_w1_png = 'assets/images/im_w1.png';
+  final String im_w2_png = 'assets/images/im_w2.png';
 }

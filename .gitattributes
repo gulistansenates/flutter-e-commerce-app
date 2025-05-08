@@ -1,0 +1,5 @@
+# Otomatik olarak satır sonlarını normalize et
+* text=auto
+
+# Özellikle Dart dosyaları için LF kullan
+*.dart text eol=lf

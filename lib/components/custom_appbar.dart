@@ -1,17 +1,16 @@
-import 'package:e_commerce_app/assets.dart';
-import 'package:e_commerce_app/constant/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:grock/grock.dart';
+import 'package:e_commerce_app/assets.dart';
+import 'package:e_commerce_app/constant/constant.dart';
 
 class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
-  @override
-  final Size preferredSize;
-
   final String appbarTitle;
 
-  const CustomAppbar({super.key, this.appbarTitle = "iDrip"})
-    : preferredSize = const Size.fromHeight(56.0);
+  const CustomAppbar({super.key, this.appbarTitle = "iDrip"});
+
+  @override
+  Size get preferredSize => const Size.fromHeight(56.0);
 
   @override
   Widget build(BuildContext context) {

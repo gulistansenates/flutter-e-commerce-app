@@ -1,6 +1,9 @@
+import 'package:e_commerce_app/components/product_card.dart';
 import 'package:e_commerce_app/constant/constant.dart';
+import 'package:e_commerce_app/model/home_products_model.dart';
 import 'package:e_commerce_app/riverpod/home_riverpod.dart';
 import 'package:flutter/material.dart';
+import 'package:e_commerce_app/components/custom_appbar.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:grock/grock.dart';
 
@@ -19,15 +22,61 @@ class _HomeState extends ConsumerState<Home> {
     var watch = ref.watch(homeRiverpod);
     var read = ref.read(homeRiverpod);
     return Scaffold(
+      appBar: CustomAppbar(),
       body: ListView(
         children: [
           campaigns(read, watch),
-          //homeProductCategories(read.hotDeals),
-         // homeProductCategories(read.mostPopular),
+          homeProductCategories(read.hotDeals),
+          homeProductCategories(read.mostPopular),
         ],
       ),
     );
   }
+
+  Widget homeProductCategories(HomeProductsModel model) {
+    return Column(
+      children: [
+        Padding(
+          padding: [20, 25, 20, 15].paddingLTRB,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                model.categoryTitle,
+                style: const TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+              const Text(
+                "See All",
+                style: TextStyle(
+                  decoration: TextDecoration.underline,
+                  fontSize: 14,
+                  fontWeight: FontWeight.w800,
+                  color: Color(0xffA6A6AA),
+                ),
+              ),
+            ],
+          ),
+        ),
+        SizedBox(
+          height: 270,
+          child: ListView.separated(
+            separatorBuilder: (context, index) => const SizedBox(width: 20),
+            itemCount: model.products.length,
+            padding: [20, 10, 20, 10].paddingLTRB,
+            scrollDirection: Axis.horizontal,
+            itemBuilder: (context, index) {
+              return ProductCard(product: model.products[index]);
+            },
+          ),
+        ),
+      ],
+    );
+  }
+
+  SizedBox space() => const SizedBox(height: 20);
 
   SizedBox campaigns(HomeRiverpod read, HomeRiverpod watch) {
     return SizedBox(
