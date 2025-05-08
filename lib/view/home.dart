@@ -1,6 +1,10 @@
-import 'package:e_commerce_app/components/custom_appbar.dart';
+import 'package:e_commerce_app/constant/constant.dart';
+import 'package:e_commerce_app/riverpod/home_riverpod.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:grock/grock.dart';
+
+final homeRiverpod = ChangeNotifierProvider((ref) => HomeRiverpod());
 
 class Home extends ConsumerStatefulWidget {
   const Home({super.key});
@@ -12,8 +16,62 @@ class Home extends ConsumerStatefulWidget {
 class _HomeState extends ConsumerState<Home> {
   @override
   Widget build(BuildContext context) {
+    var watch = ref.watch(homeRiverpod);
+    var read = ref.read(homeRiverpod);
     return Scaffold(
-      appBar: CustomAppbar(),
+      body: ListView(
+        children: [
+          campaigns(read, watch),
+          //homeProductCategories(read.hotDeals),
+         // homeProductCategories(read.mostPopular),
+        ],
+      ),
+    );
+  }
+
+  SizedBox campaigns(HomeRiverpod read, HomeRiverpod watch) {
+    return SizedBox(
+      height: 210,
+      child: Stack(
+        children: [campaignsPageView(read, watch), campaignsDot(read, watch)],
+      ),
+    );
+  }
+
+  Align campaignsDot(HomeRiverpod read, HomeRiverpod watch) {
+    return Align(
+      alignment: Alignment.bottomCenter,
+      child: Padding(
+        padding: 12.onlyBottomP,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            for (int i = 0; i < read.campaigns.length; i++)
+              Container(
+                width: 8,
+                height: 8,
+                margin: 3.allP,
+                decoration: BoxDecoration(
+                  color:
+                      watch.campaignsCurrentIndex == i
+                          ? Constant.white
+                          : Constant.gray,
+                  shape: BoxShape.circle,
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  PageView campaignsPageView(HomeRiverpod read, HomeRiverpod watch) {
+    return PageView.builder(
+      controller: read.pageController,
+      itemCount: read.campaigns.length,
+      itemBuilder: (context, index) => Image.asset(watch.campaigns[index]),
+      onPageChanged: (newPageValue) => read.setCampaignsIndex(newPageValue),
     );
   }
 }
