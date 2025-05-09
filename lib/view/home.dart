@@ -3,7 +3,6 @@ import 'package:e_commerce_app/constant/constant.dart';
 import 'package:e_commerce_app/model/home_products_model.dart';
 import 'package:e_commerce_app/riverpod/home_riverpod.dart';
 import 'package:flutter/material.dart';
-import 'package:e_commerce_app/components/custom_appbar.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:grock/grock.dart';
 
@@ -22,7 +21,6 @@ class _HomeState extends ConsumerState<Home> {
     var watch = ref.watch(homeRiverpod);
     var read = ref.read(homeRiverpod);
     return Scaffold(
-      appBar: CustomAppbar(),
       body: ListView(
         children: [
           campaigns(read, watch),

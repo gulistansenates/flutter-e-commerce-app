@@ -1,5 +1,9 @@
-# Otomatik olarak satır sonlarını normalize et
 * text=auto
 
-# Özellikle Dart dosyaları için LF kullan
 *.dart text eol=lf
+
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.html text eol=lf

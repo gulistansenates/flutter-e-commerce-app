@@ -85,7 +85,7 @@ class HomeRiverpod extends ChangeNotifier {
         isSaved: true,
       ),
       Product(
-        image: Assets.images.im_c2_png,
+        image: Assets.images.im_c1_png,
         title: "apple iMac 30 (2018)",
         price: 1000,
         star: 4.4,

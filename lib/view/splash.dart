@@ -1,5 +1,5 @@
 import 'package:e_commerce_app/assets.dart';
-import 'package:e_commerce_app/view/home.dart';
+import 'package:e_commerce_app/view/base_scaffold.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce_app/constant/constant.dart';
 import 'package:grock/grock.dart';
@@ -15,7 +15,7 @@ class _SplashState extends State<Splash> {
   @override
   void initState() {
     Future.delayed(const Duration(seconds: 2), () {
-      Grock.toRemove(Home());
+      Grock.toRemove(BaseScaffold());
     });
     super.initState();
   }
