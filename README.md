@@ -10,7 +10,33 @@ This is a sample **e-commerce mobile application** built using **Flutter** and *
 - **Flutter SVG** for vector image rendering
 - **Asset Gen (flutter_gen)** for automatic asset management (icons & images)
 
-## 📁 Project Structure
+## 🚀 Getting Started
+
+To run this app on your local machine:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/e-commerce-app.git
+
+# 2. Navigate into the project directory
+cd e-commerce-app
+
+# 3. Get dependencies
+flutter pub get
+
+# 4. Run the app
+flutter run
+```
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page](assets/screenshots/home_page.png)
+
+### 🛒 Product List
+![Product List](assets/screenshots/product_list.png)
+
+### 🧾 Product Detail
+![Product Detail](assets/screenshots/product_detail.png)
 
 
 
