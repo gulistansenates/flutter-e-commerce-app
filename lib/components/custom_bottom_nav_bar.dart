@@ -85,17 +85,3 @@ class CustomBottomNavBar extends ConsumerWidget {
     );
   }
 }
-
-/*
-BottomNavigationBar(
-      items: read.items,
-      currentIndex: watch.currentIndex,
-      onTap: (newPageIndex) => read.setCurrentIndex(newPageIndex),
-      backgroundColor: Constant.darkWhite,
-      selectedItemColor: Constant.orange,
-      selectedIconTheme: IconThemeData(
-        color: Constant.orange,
-      ),
-      unselectedItemColor: Constant.black,
-    );
-*/

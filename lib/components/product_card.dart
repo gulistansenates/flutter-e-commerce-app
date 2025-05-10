@@ -3,6 +3,7 @@ import 'package:e_commerce_app/model/product.dart';
 import 'package:flutter/material.dart';
 import 'package:grock/grock.dart';
 
+// ignore: must_be_immutable
 class ProductCard extends StatelessWidget {
   Product product;
   ProductCard({super.key, required this.product});
@@ -10,7 +11,6 @@ class ProductCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GrockContainer(
       // onTap: () => Grock.to(ProductDetail(product: product)),
-      
       width: 150,
       decoration: BoxDecoration(
         color: Constant.white,
