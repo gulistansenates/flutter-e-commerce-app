@@ -14,17 +14,20 @@ This is a sample **e-commerce mobile application** built using **Flutter** and *
 
 To run this app on your local machine:
 
-```bash
 # 1. Clone the repository
+```markdown
 git clone https://github.com/your-username/e-commerce-app.git
-
+```
 # 2. Navigate into the project directory
+```markdown
 cd e-commerce-app
-
+```
 # 3. Get dependencies
+```markdown
 flutter pub get
-
+```
 # 4. Run the app
+```markdown
 flutter run
 ```
 ## 📸 Screenshots
