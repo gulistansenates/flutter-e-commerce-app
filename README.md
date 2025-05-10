@@ -1,4 +1,4 @@
-# E-Commerce App
+# 🛍️ E-Commerce App
 
 This is a sample **e-commerce mobile application** built using **Flutter** and **Dart**. The app includes features like product listing, navigation between pages, and UI components like custom app bars, buttons, and a bottom navigation bar. It is designed for visual demonstration purposes and does not include backend functionality.
 
@@ -32,14 +32,15 @@ flutter run
 ```
 ## 📸 Screenshots
 
-### 🏠 Home Page
-![Home Page](assets/screenshots/home_page.png)
+### 👋 Splash
+![Splash](assets/screenshots/sc1.png)
 
-### 🛒 Product List
-![Product List](assets/screenshots/product_list.png)
+### 🏠 Home 
+![Home Page](assets/screenshots/sc2.png)
+![Home Page](assets/screenshots/sc3.png)
 
-### 🧾 Product Detail
-![Product Detail](assets/screenshots/product_detail.png)
+### 🛒 Cart
+![Cart Page](assets/screenshots/sc4.png)
 
 
 
