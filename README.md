@@ -12,17 +12,16 @@ This is a sample **e-commerce mobile application** built using **Flutter** and *
 
 ## 📸 Screenshots
 
-<img src="assets/screenshots/sc1.png" alt="Ana Ekran" width="200"/>
-
 ### 👋 Splash
+<img src="assets/screenshots/sc1.png" alt="Splash" width="250"/>
 ![Splash](assets/screenshots/sc1.png)
 
 ### 🏠 Home 
-![Home Page](assets/screenshots/sc2.png)
-![Home Page](assets/screenshots/sc3.png)
+<img src="assets/screenshots/sc2.png" alt="Home Page" width="250"/>
+<img src="assets/screenshots/sc3.png" alt="Home Page" width="250"/>
 
 ### 🛒 Cart
-![Cart Page](assets/screenshots/sc4.png)
+<img src="assets/screenshots/sc4.png" alt="Cart Page" width="250"/>
 
 ## 🚀 Getting Started
 
