@@ -12,7 +12,7 @@ This is a sample **e-commerce mobile application** built using **Flutter** and *
 
 ## 📸 Screenshots
 
-<img src="assets/screenshots/sc1.png" alt="Ana Ekran" width="400"/>
+<img src="assets/screenshots/sc1.png" alt="Ana Ekran" width="200"/>
 
 ### 👋 Splash
 ![Splash](assets/screenshots/sc1.png)
