@@ -16,7 +16,7 @@ This is a sample **e-commerce mobile application** built using **Flutter** and *
 <img src="assets/screenshots/sc1.png" alt="Splash" width="250"/>
 
 ### 🏠 Home 
-<img src="assets/screenshots/sc2.png" alt="Home Page" width="250"/> <img src="assets/screenshots/sc3.png" alt="Home Page" width="260"/>
+<img src="assets/screenshots/sc2.png" alt="Home Page" width="250"/> <img src="assets/screenshots/sc3.png" alt="Home Page" width="255"/>
 
 ### 🛒 Cart
 <img src="assets/screenshots/sc4.png" alt="Cart Page" width="250"/>
