@@ -10,6 +10,17 @@ This is a sample **e-commerce mobile application** built using **Flutter** and *
 - **Flutter SVG** for vector image rendering
 - **Asset Gen (flutter_gen)** for automatic asset management (icons & images)
 
+## 📸 Screenshots
+
+### 👋 Splash
+<img src="assets/screenshots/sc1.png" alt="Splash" width="250"/>
+
+### 🏠 Home 
+<img src="assets/screenshots/sc2.png" alt="Home Page" width="250"/> <img src="assets/screenshots/sc3.png" alt="Home Page" width="255"/>
+
+### 🛒 Cart
+<img src="assets/screenshots/sc4.png" alt="Cart Page" width="250"/>
+
 ## 🚀 Getting Started
 
 To run this app on your local machine:
@@ -30,17 +41,8 @@ flutter pub get
 ```markdown
 flutter run
 ```
-## 📸 Screenshots
+## License
 
-### 👋 Splash
-![Splash](assets/screenshots/sc1.png)
-
-### 🏠 Home 
-![Home Page](assets/screenshots/sc2.png)
-![Home Page](assets/screenshots/sc3.png)
-
-### 🛒 Cart
-![Cart Page](assets/screenshots/sc4.png)
-
+[MIT](https://choosealicense.com/licenses/mit/)
 
 
