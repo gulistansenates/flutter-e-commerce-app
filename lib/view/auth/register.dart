@@ -44,7 +44,7 @@ class RegisterPage extends StatelessWidget {
                 const SizedBox(height: 32),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Constant.orange,
+                    backgroundColor: Constant.yellow,
                     foregroundColor: Constant.white,
                     minimumSize: const Size(double.infinity, 48),
                     shape: RoundedRectangleBorder(
