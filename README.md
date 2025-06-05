@@ -8,7 +8,7 @@ This is a sample **e-commerce mobile application** built using **Flutter** and *
 - **Riverpod** for state management
 - **Grock** for layout and navigation
 - **Flutter SVG** for vector image rendering
-- **Asset Gen (flutter_gen)** for automatic asset management (icons & images)
+- **Asset Generate** for automatic asset management (icons & images)
 
 ## 📸 Screenshots
 
